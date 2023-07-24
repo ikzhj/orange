@@ -1,12 +1,18 @@
-import {createRouter, createWebHistory} from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 
 const routes: any = [
+    { path: '/', redirect: '/welcome' },
     {
-        path: '/',
+        path: '/welcome',
+        name: '欢迎',
+        components: {
+            default: () => import('@/components/VideoBackground.vue'),
+        }
+    }, {
+        path: '/home',
         name: '首页',
         components: {
             default: () => import('@/views/home/index.vue'),
-            video: () => import('@/components/VideoBackground.vue'),
         }
     }, {
         path: '/portfolios',

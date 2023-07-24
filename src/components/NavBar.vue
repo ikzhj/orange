@@ -1,6 +1,6 @@
 <template>
   <div class="nav_box">
-    <a-image src="/logo.png" :preview="false" @click="router.push({path:'/'})"/>
+    <a-image src="/logo.png" :preview="false" />
 
     <a-row class="nav" justify="end">
       <a-col :span="2" @click="router.push({path:'/portfolios'})">作品集</a-col>
@@ -73,7 +73,7 @@ const router = useRouter();
   :deep(.ant-image-img) {
     width: 120px;
     height: 60px;
-    cursor: pointer;
+    // cursor: pointer;
   }
 
   .nav {

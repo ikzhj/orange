@@ -1,15 +1,15 @@
 <template>
   <div class="video-box">
-    <video class="video-background" preload="auto" loop playsinline autoplay
-           src="../assets/video/bgmp4.mp4" tabindex="-1"
-           muted="muted"/>
+    <video class="video-background" preload="auto" loop playsinline autoplay src="../assets/video/bgmp4.mp4" tabindex="-1"
+      muted="muted" />
     <div class="layer">
-      <img src="/logo.png" alt="bytedance"/>
+      <img src="/logo.png" alt="bytedance" />
       <div class="slogan">
         <div class="subtitle">激发创造，丰富生活</div>
         <div class="title">欢迎来到落日橘子洲</div>
+        <div class="try-btn" @click="router.push({path: '/home'})">了解更多</div>
       </div>
-      <div class="animation_down down_arrow">
+      <!-- <div class="animation_down down_arrow">
         <div class="arrow">
           <svg-icon name="down"/>
           <svg-icon name="down"/>
@@ -17,7 +17,7 @@
           <svg-icon name="down"/>
           <svg-icon name="down"/>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -25,6 +25,10 @@
 <script setup lang="ts">
 
 import SvgIcon from "@/components/IconSvg.vue";
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+
 </script>
 
 <style scoped lang="less">
@@ -85,6 +89,22 @@ import SvgIcon from "@/components/IconSvg.vue";
       letter-spacing: 10px;
       margin: 0 0 16px;
     }
+
+    .try-btn {
+      position: relative;
+      left: 50%;
+      width: 156px;
+      height: 54px;
+      line-height: 54px;
+      margin-top: 40px;
+      margin-left: -78px;
+      color: #3370ff;
+      background: white;
+      text-align: center;
+      border-radius: 100px;
+      font-weight: 600;
+      cursor: pointer;
+    }
   }
 
   .animation_down {
@@ -100,7 +120,8 @@ import SvgIcon from "@/components/IconSvg.vue";
     font-weight: 600;
     //background: white;
     overflow: hidden;
-    .arrow{
+
+    .arrow {
       -webkit-animation: 2s down_arrow linear infinite normal;
       animation: 2s down_arrow linear infinite normal;
       position: relative;
@@ -119,6 +140,7 @@ import SvgIcon from "@/components/IconSvg.vue";
     -webkit-transform: translate3d(0, -100px, 0);
     transform: translate3d(0, -100px, 0);
   }
+
   100% {
     -webkit-transform: translate3d(0, 200px, 0);
     transform: translate3d(0, 200px, 0);
