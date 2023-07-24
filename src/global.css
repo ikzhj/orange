@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    /*display: none;*/
+    /*overflow-y: hidden;*/
+}
+
+:root {
+    --nav-font-size: 16px;
+    background: url("./assets/StockImages/bg1.jpg");
+    background-size: 100% 100%;
+    --main-bg-color: rgba(18, 18, 18, 1);
+    --card-bg-color: rgba(255, 255, 255, .2);
+    --card-box-color: rgba(255, 255, 255, 1);
+    --card-box-content-color: rgba(244, 244, 244, 0.45);
+    --main-font-color: rgba(18, 18, 18, 1);
+    --sub-font-color: rgba(18, 18, 18, .65);
+
+    --whiteShadow: -15px -15px 25px rgba(244, 244, 244, 0.45);
+    --blackShadow: 15px 15px 25px rgba(208, 183, 183, 0.2);
+    --whiteShadow2: 15px 15px 25px rgba(244, 244, 244, 0.45);
+    --blackShadow2: -15px -15px 25px rgba(193, 181, 181, 0.2);
+}
+
+.text_right {
+    text-align: right;
+}
+
+.margin_left_8 {
+    margin-left: 8px;
+
+}
+
+.margin_right_8 {
+    margin-right: 8px;
+}
