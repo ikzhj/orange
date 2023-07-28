@@ -6,8 +6,8 @@
 </template>
 
 <script setup lang="ts">
-import Card from "@/components/Card.vue";
-import Projects from "@/views/about-me/components/Projects.vue";
+// import Card from "@/components/Card.vue";
+// import Projects from "@/views/about-me/components/Projects.vue";
 
 </script>
 

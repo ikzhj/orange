@@ -8,11 +8,11 @@
         <div class="timeline_content bulge">
           <div class="timeline_content bulge_in">
             <div class="title">{{ el.projectName }}</div>
-            <div class="introduce" :style="{textAlign: index%2 === 0 ? '': 'left'}">{{
+            <div class="introduce" :class="{text_left: index%2 === 0}">{{
                 el.introduce
               }}
             </div>
-            <div v-for="(it,ind) in el.duty" :key="ind" :style="{textAlign: index%2 === 0 ? '': 'left'}">
+            <div v-for="(it,ind) in el.duty" :key="ind" :class="{text_left: index%2 === 0}">
               <div class="paragraph">
                 <svg-icon name="geometry"/>
                 <span>{{ it }}</span>

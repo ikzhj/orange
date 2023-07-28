@@ -1,13 +1,13 @@
 <template>
   <div class="video-box">
     <video class="video-background" preload="auto" loop playsinline autoplay src="../assets/video/bgmp4.mp4" tabindex="-1"
-      muted="muted" />
+      muted />
     <div class="layer">
       <img src="/logo.png" alt="bytedance" />
       <div class="slogan">
         <div class="subtitle">激发创造，丰富生活</div>
         <div class="title">欢迎来到落日橘子洲</div>
-        <div class="try-btn" @click="router.push({path: '/home'})">了解更多</div>
+        <div class="try-btn" @click="router.push({ path: '/home' })">了解更多</div>
       </div>
       <!-- <div class="animation_down down_arrow">
         <div class="arrow">
@@ -24,7 +24,7 @@
 
 <script setup lang="ts">
 
-import SvgIcon from "@/components/IconSvg.vue";
+// import SvgIcon from "@/components/IconSvg.vue";
 import { useRouter } from 'vue-router'
 
 const router = useRouter()
