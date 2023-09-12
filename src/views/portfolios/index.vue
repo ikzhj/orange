@@ -83,7 +83,7 @@ const itemsContent = reactive({
 
 const onOpenChange = (openKeys: string[]) => {
   let latestOpenKey = openKeys.find(key => state.openKeys.indexOf(key) === -1);
-  if (state.rootSubmenuKeys.indexOf(latestOpenKey) === -1) {
+  if (state.rootSubmenuKeys.includes(latestOpenKey) === -1) {
     state.openKeys = openKeys;
   } else {
     state.openKeys = latestOpenKey ? [latestOpenKey] : [];
@@ -102,7 +102,7 @@ const onOpenChange = (openKeys: string[]) => {
 
 .layout_right {
   margin-left: 20px;
-  .right_content{
+  >.right_content{
     display: flex;
     flex-wrap: wrap;
   }
