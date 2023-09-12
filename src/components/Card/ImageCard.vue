@@ -6,7 +6,7 @@
           :preview="{ visible: false }" alt="example"
                src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" @click="visible = true"/>
       <div style="display: none">
-        <a-image-preview-group :preview="{ visible, onVisibleChange: vis => (visible = vis) }">
+        <a-image-preview-group :preview="{ visible, onVisibleChange: (vis) => (visible = vis) }">
           <a-image
               src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
           />
@@ -28,10 +28,10 @@
   </a-card>
 </template>
 
-<script setup lang="ts">
-import {ref} from 'vue'
+<script lang="ts" setup>
+import { ref } from 'vue';
 
-const visible = ref(false)
+const visible = ref(false);
 </script>
 
 <style lang="less" scoped>
