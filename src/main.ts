@@ -4,7 +4,7 @@ import Antd from 'ant-design-vue';
 import 'ant-design-vue/dist/reset.css';
 import router from "./router/index.ts";
 import store from "./store";
-import "./global.css";
+import "./global.less";
 import IconSvg from "@/components/IconSvg.vue";
 import 'virtual:svg-icons-register';
 

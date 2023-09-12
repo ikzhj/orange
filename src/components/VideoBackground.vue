@@ -3,7 +3,7 @@
     <video class="video-background" preload="auto" loop playsinline autoplay src="../assets/video/bgmp4.mp4" tabindex="-1"
       muted />
     <div class="layer">
-      <img src="/logo.png" alt="bytedance" />
+      <img src="/logo.svg" alt="bytedance" />
       <div class="slogan">
         <div class="subtitle">激发创造，丰富生活</div>
         <div class="title">欢迎来到落日橘子洲</div>

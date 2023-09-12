@@ -1,7 +1,7 @@
-import { createRouter, createWebHistory } from "vue-router";
+import {createRouter, createWebHistory} from "vue-router";
 
 const routes: any = [
-    { path: '/', redirect: '/welcome' },
+    {path: '/', redirect: '/welcome'},
     {
         path: '/welcome',
         name: '欢迎',
@@ -13,13 +13,15 @@ const routes: any = [
         name: '首页',
         components: {
             default: () => import('@/views/home/index.vue'),
-        }
-    }, {
-        path: '/portfolios',
-        name: '作品集',
-        components: {
-            default: () => import('@/views/portfolios/index.vue'),
-        }
+        },
+        children: [
+            {
+                path: '',
+                components: {
+                    default: () => import('@/views/portfolios/index.vue'),
+                }
+            },
+        ]
     }, {
         path: '/knowledge',
         name: '知识库',

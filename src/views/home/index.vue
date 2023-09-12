@@ -3,7 +3,7 @@
     <div class="content">
       <NavBar />
       <div class="main_content">
-        <!-- <router-view></router-view> -->
+         <router-view></router-view>
       </div>
       <Footer />
     </div>
@@ -19,8 +19,6 @@ import Footer from "@/components/Footer.vue";
 .app_box {
   width: 100%;
   height: 100%;
-  background: url("../../assets/StockImages/bg1.jpg");
-  background-size: cover;
   color: var(--main-font-color);
 
   .content {
