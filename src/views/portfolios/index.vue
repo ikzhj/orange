@@ -77,9 +77,9 @@ const itemsContent = reactive<any>({
       title: '智慧小区',
       description: '内网 & 外网',
       images: [
-        '~@/assets/StockImages/webPc/001/35.jpg',
-        '~@/assets/StockImages/webPc/001/36.jpg',
-        '~@/assets/StockImages/webPc/001/41.png',
+        'src/assets/StockImages/webPc/001/35.jpg',
+        'src/assets/StockImages/webPc/001/36.jpg',
+        'src/assets/StockImages/webPc/001/41.png',
       ]
     }, {
       title: '组件库文档',
@@ -152,13 +152,13 @@ const itemsContent = reactive<any>({
       title: '平安畅行码',
       description: '小程序入口',
       images: [
-        'src/assets/StockImages/Wx/001/6.jpg',
+        '/Wx/001/6.jpg',
       ]
     }],
     [{
       title: '勤务考勤',
       description: '接入小程序打卡流程示意',
-      videoAddress: 'src/assets/StockImages/Wx/勤务考勤.mp4',
+      videoAddress: '/Wx/勤务考勤.mp4',
     }]],
 })
 
