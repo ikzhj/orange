@@ -23,13 +23,13 @@ import {reactive} from "vue";
 import ImageCard from "@/components/Card/ImageCard.vue";
 import VideoCard from "@/components/Card/VideoCard.vue";
 
-const state = reactive({
+const state = reactive<any>({
   selectedKeys: ['1'],
   openKeys: [],
   rootSubmenuKeys: ['sub1', 'sub2',],
 });
 
-const items = reactive([
+const items = reactive<any>([
   {
     key: '1',
     label: '后台管理系统',
@@ -163,11 +163,11 @@ const itemsContent = reactive<any>({
 })
 
 const onOpenChange = (openKeys: any) => {
-  let latestOpenKey = openKeys.find(key => state.openKeys.indexOf(key) === -1);
+  const latestOpenKey: any = openKeys.find(key => state.openKeys.indexOf(key) === -1);
   if (state.rootSubmenuKeys.includes(latestOpenKey)) {
     state.openKeys = openKeys;
   } else {
-    state.openKeys = latestOpenKey ? [latestOpenKey] : [];
+    state.openKeys = latestOpenKey ? [latestOpenKey] : [] as any[];
   }
 };
 </script>
