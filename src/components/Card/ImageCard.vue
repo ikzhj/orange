@@ -4,34 +4,27 @@
       <a-image
           style="height: 200px"
           :preview="{ visible: false }" alt="example"
-               src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" @click="visible = true"/>
+          :src="data.images[0]" @click="visible = true"/>
       <div style="display: none">
         <a-image-preview-group :preview="{ visible, onVisibleChange: (vis) => (visible = vis) }">
-          <a-image
-              src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
-          />
-          <a-image
-              src="https://gw.alipayobjects.com/zos/antfincdn/LlvErxo8H9/photo-1503185912284-5271ff81b9a8.webp"
-          />
-          <a-image
-              src="https://gw.alipayobjects.com/zos/antfincdn/cV16ZqzMjW/photo-1473091540282-9b846e7965e3.webp"
-          />
-          <a-image
-              src="https://gw.alipayobjects.com/zos/antfincdn/x43I27A55%26/photo-1438109491414-7198515b166b.webp"
-          />
+          <a-image v-for="el in data.images" :key="el" :src="el"/>
         </a-image-preview-group>
       </div>
     </template>
-    <a-card-meta title="Europe Street beat">
-      <template #description>www.instagram.com</template>
+    <a-card-meta :title="data.title">
+      <template #description>{{ data.description }}</template>
     </a-card-meta>
   </a-card>
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue';
+import {ref} from 'vue';
 
 const visible = ref(false);
+const props = defineProps({
+  data: null
+})
+// console.log(props.data, "===")
 </script>
 
 <style lang="less" scoped>

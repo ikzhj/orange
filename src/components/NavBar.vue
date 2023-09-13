@@ -4,7 +4,7 @@
 
     <a-row class="nav" justify="end">
       <a-col :span="2" @click="router.push({path:'/knowledge'})">知识库</a-col>
-      <a-col :span="2" @click="router.push({path:'/about-me'})">关于我</a-col>
+<!--      <a-col :span="2" @click="router.push({path:'/about-me'})">关于我</a-col>-->
       <a-col :span="2">
         <a-dropdown>
           <span @click="e => e.preventDefault()">
