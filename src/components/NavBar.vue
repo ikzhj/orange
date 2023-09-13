@@ -78,7 +78,7 @@ const morelinks = reactive([
 <style scoped lang="less">
 .nav_box {
   height: 60px;
-  background: url("src/assets/StockImages/videobg.png");
+  background: url("../assets/StockImages/videobg.png");
   color: @nav-text-color;
   font-weight: 600;
   border-radius: 50px;
