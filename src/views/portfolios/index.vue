@@ -71,7 +71,7 @@ const items = reactive([
   // },
 ])
 
-const itemsContent = reactive({
+const itemsContent = reactive<any>({
   '1': [
     [{
       title: '智慧小区',
@@ -162,9 +162,9 @@ const itemsContent = reactive({
     }]],
 })
 
-const onOpenChange = (openKeys: string[]) => {
+const onOpenChange = (openKeys: any) => {
   let latestOpenKey = openKeys.find(key => state.openKeys.indexOf(key) === -1);
-  if (state.rootSubmenuKeys.includes(latestOpenKey) === -1) {
+  if (state.rootSubmenuKeys.includes(latestOpenKey)) {
     state.openKeys = openKeys;
   } else {
     state.openKeys = latestOpenKey ? [latestOpenKey] : [];
