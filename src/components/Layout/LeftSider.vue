@@ -64,14 +64,14 @@ const menus = ref<MenuProps['items']>([
     ]
 );
 // 面包屑
-const breadcrumbs = ref([]);
+const breadcrumbs = ref<any>([]);
 // 监听——菜单和面包屑联动
 watch(() => selectedKeys.value[0],
     (newVal, oldVal) => {
       const copyMenus = menus.value
       copyMenus?.map((item) => {
         if (item.children) {
-          item.children.map((el) => {
+          item.children?.map((el) => {
             if (el.key === newVal) {
               breadcrumbs.value = [item.label, el.label]
             }
