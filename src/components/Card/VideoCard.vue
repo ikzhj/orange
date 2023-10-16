@@ -3,7 +3,7 @@
     <template #cover>
       <div class="out_box">
         <div class="in_box">
-          <video class="video-background" controls :src="data.videoAddress" tabindex="-1" muted/>
+          <video class="video-background" controls preload="none" poster="封面图" :src="data.videoAddress" muted/>
         </div>
       </div>
     </template>
@@ -30,7 +30,7 @@ const props = defineProps({
   height: 150px;
   border-radius: 8px;
   transform: rotate(10deg);
-  background: url("src/assets/StockImages/videobg.png");
+  background: url("../../assets/StockImages/videobg.png");
   background-size: cover;
   margin: 0 auto;
   margin-top: 18px;
