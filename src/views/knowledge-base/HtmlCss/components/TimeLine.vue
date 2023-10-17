@@ -12,7 +12,7 @@
           <li>
             <div class="card">
               <a href="">
-                <img src="./resource/timeline/03.gif" alt="">
+                <img src="../resource/timeline/03.gif" alt="">
               </a>
             </div>
           </li>
@@ -46,6 +46,7 @@ const data = reactive([
   position: relative;
   aspect-ratio: 1/ 1;
   background-image: linear-gradient(to top, #a18cd177 0%, #fbc2eb77 100%);
+  border-radius: 8px;
 }
 
 /* 鼠标悬停时暂停动画 */
@@ -189,7 +190,7 @@ li:nth-child(6) .card {
   box-shadow: 0px 18px 36px -18px rgba(12, 5, 46, 0.3),
   0px 30px 60px -12px rgba(12, 5, 46, 0.25);
   border-radius: 50%;
-  background-image: url(./resource/timeline/03.gif);
+  background-image: url(../resource/timeline/03.gif);
 }
 
 /* 设置第二个圆样式 */
