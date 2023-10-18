@@ -25,7 +25,7 @@ const data = reactive([
     description: '通过阴影，颜色，动画实现按钮的不同动态效果',
   }, {
     title: '菜单悬停',
-    description: '立体菜单，移出式悬停样式',
+    description: '立体菜单，鼠标移入菜单项，对应菜单项会向右移出一部分并高亮显示当前菜单项',
   }])
 </script>
 
