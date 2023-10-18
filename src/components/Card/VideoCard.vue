@@ -3,7 +3,7 @@
     <template #cover>
       <div class="out_box">
         <div class="in_box">
-          <video class="video-background" controls preload="none" poster="封面图" :src="data.videoAddress" muted/>
+          <video class="video-background" controls preload="none" :src="data.videoAddress" muted/>
         </div>
       </div>
     </template>
