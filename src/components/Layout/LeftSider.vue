@@ -69,9 +69,9 @@ const breadcrumbs = ref<any>([]);
 watch(() => selectedKeys.value[0],
     (newVal, oldVal) => {
       const copyMenus = menus.value
-      copyMenus?.map((item) => {
+      copyMenus?.map((item:any) => {
         if (item.children) {
-          item.children?.map((el) => {
+          item.children.map((el) => {
             if (el.key === newVal) {
               breadcrumbs.value = [item.label, el.label]
             }
