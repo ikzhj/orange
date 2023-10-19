@@ -1,4 +1,4 @@
-import {createRouter, createWebHistory} from "vue-router";
+import {createRouter, createWebHashHistory } from "vue-router";
 
 const routes: any = [
     {path: '/', redirect: '/welcome'},
@@ -37,7 +37,7 @@ const routes: any = [
     }
 ]
 const router = createRouter({
-    history: createWebHistory(),  // 指定路由模式
+    history: createWebHashHistory (),  // 指定路由模式
     routes
 });
 export default router;
